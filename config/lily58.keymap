@@ -54,13 +54,13 @@
 // | BTCLR | BT1 	   | BT2 	      |  BT3 	       |  BT4 	     |  BT5    	   |                             |      |       |       |      |       |       |
 // |       |    	   |    	      |     	       |     	     |        	   |                             |      |       |       |      |       |   \   |
 // |   ~   |  !  	   |  @  	      |  #   	       |  $   	     |  %      	   |                             |  ^   |  &    |  *    |  (   |   )   |   _   |
-// |       |  EP_ON	   | EP_OFF	      |      	       |  (   	     |  {      	   | extpwr TOG     |  |   DEL   |  }   |  )    |  +    |  {   |   }   | SHIFT |
+// | SHIFT |  EP_ON	   | EP_OFF	      |      	       |  (   	     |  {      	   | extpwr TOG     |  |   DEL   |  }   |  )    |  +    |  {   |   }   | SHIFT |
 //                     	         	      |      	       |      	     |         	   |                |  |         |      |       |       |
 			bindings = <
 &bt BT_CLR &bt BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3 &bt BT_SEL 4                 		  &trans    &trans    &trans          &trans    &trans    &trans
 &trans     &trans           &trans            &trans            &trans       &trans                       		  &trans    &trans    &trans          &trans    &trans    &kp BSLH
 &kp TILDE  &kp EXCL         &kp AT            &kp HASH          &kp DOLLAR   &kp PRCNT                    		  &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR  &kp UNDER
-&trans     &ext_power EP_ON &ext_power EP_OFF &trans  		&kp LPAR     &kp LBRC       &ext_power EP_TOG   &kp DEL   &kp RBRC  &kp RPAR  &kp KP_PLUS     &kp LBRC  &kp RBRC  &kp RSHFT
+&kp LSHIFT &ext_power EP_ON &ext_power EP_OFF &trans  		&kp LPAR     &kp LBRC       &ext_power EP_TOG   &kp DEL   &kp RBRC  &kp RPAR  &kp KP_PLUS     &kp LBRC  &kp RBRC  &kp RSHFT
                                               &trans            &trans       &trans         &trans   		&trans    &trans    &trans    &trans
 			>;
 
