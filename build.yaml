@@ -18,7 +18,14 @@
 #
 ---
 include:
-  - board: nice_nano
+  - board: nrfpro
     shield: lily58_left
-  - board: nice_nano
+  - board: nrfpro
     shield: lily58_right
+
+#---
+#include:
+#  - board: nice_nano
+#    shield: lily58_left
+#  - board: nice_nano
+#    shield: lily58_right
